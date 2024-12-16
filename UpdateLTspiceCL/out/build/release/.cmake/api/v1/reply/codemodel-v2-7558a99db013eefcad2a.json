@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-2ac1e047b1ab121fcf5a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UpdateLTspiceCL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "UpdateLTspiceCL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UpdateLTspiceCL-Release-c5e60d6049d08d4d7425.json",
+					"name" : "UpdateLTspiceCL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UpdateLTspiceCL_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UpdateLTspiceCL_autogen-Release-ab3522ad258517ab4fe4.json",
+					"name" : "UpdateLTspiceCL_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UpdateLTspiceCL_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UpdateLTspiceCL_autogen_timestamp_deps-Release-2fc59f754ad9c80a6975.json",
+					"name" : "UpdateLTspiceCL_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release",
+		"source" : "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

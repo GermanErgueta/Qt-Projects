@@ -1,0 +1,23 @@
+C:\Users\german.ergueta\AppData\Local\Programs\CLion\bin\cmake\win\aarch64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Release --preset Qt-Release -S C:\Users\german.ergueta\LTspiceDevelopment\SupportProjects\Qt-Projects\UpdateLTspiceCL -B C:\Users\german.ergueta\LTspiceDevelopment\SupportProjects\Qt-Projects\UpdateLTspiceCL\out\build\release
+Preset CMake variables:
+
+  CMAKE_PREFIX_PATH="C:/Qt/6.8.0/msvc2022_arm64"
+
+Preset environment variables:
+
+  QTDIR="C:/Qt/6.8.0/msvc2022_arm64"
+
+-- The CXX compiler identification is MSVC 19.42.34435.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.42.34433/bin/Hostarm64/arm64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Using Qt installation at: C:/Qt/6.8.1/msvc2022_arm64
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+Home Directory: C:\Users\german.ergueta
+Chilkat Directory: C:\Users\german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_arm64
+Chilkat Library: C:\Users\german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_arm64/libs/ChilkatRel_arm64.lib
+-- Configuring done (1.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release

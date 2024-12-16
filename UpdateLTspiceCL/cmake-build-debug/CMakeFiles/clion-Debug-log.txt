@@ -1,0 +1,9 @@
+C:\Users\GErgueta\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "NMake Makefiles" -S C:\Users\GErgueta\LTspiceDevelopment\SupportProjects\Qt-Projects\UpdateLTspiceCL -B C:\Users\GErgueta\LTspiceDevelopment\SupportProjects\Qt-Projects\UpdateLTspiceCL\cmake-build-debug
+Using Qt installation at: C:/Qt/6.8.1/msvc2022_64
+-- Could NOT find WrapVulkanHeaders (missing: Vulkan_INCLUDE_DIR) 
+Home Directory: C:/Users/GErgueta
+Chilkat Directory: C:/Users/GErgueta/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_x86_64
+Chilkat Library: C:/Users/GErgueta/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_x86_64/libs/ChilkatRel_x64.lib
+-- Configuring done (8.7s)
+-- Generating done (1.2s)
+-- Build files have been written to: C:/Users/GErgueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/cmake-build-debug

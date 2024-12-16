@@ -1,0 +1,16 @@
+# ninja log v6
+10	104	7549141150363039	UpdateLTspiceCL_autogen/timestamp	49f1ea96cb60215f
+10	104	7549141150363039	UpdateLTspiceCL_autogen/mocs_compilation.cpp	49f1ea96cb60215f
+10	104	7549141150363039	C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/cmake-build-debug/UpdateLTspiceCL_autogen/timestamp	49f1ea96cb60215f
+10	104	7549141150363039	C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/cmake-build-debug/UpdateLTspiceCL_autogen/mocs_compilation.cpp	49f1ea96cb60215f
+259	1322	7547526432702927	CMakeFiles/UpdateLTspiceCL.dir/UpdateLTspiceCL_autogen/mocs_compilation.cpp.obj	9ca4e5dddf5328fc
+267	1338	7547526432774439	CMakeFiles/UpdateLTspiceCL.dir/main.cpp.obj	3120d6faa63e52f0
+107	1842	7549141151328145	CMakeFiles/UpdateLTspiceCL.dir/changes.cpp.obj	25d053b7ee24c2c6
+104	2152	7549141151296344	CMakeFiles/UpdateLTspiceCL.dir/mainwindow.cpp.obj	485ffd95a89fe45c
+114	1849	7549141151399181	CMakeFiles/UpdateLTspiceCL.dir/example.cpp.obj	a0f7f7197fd200f7
+110	2073	7549141151359702	CMakeFiles/UpdateLTspiceCL.dir/dirpaths.cpp.obj	69474c3a6bf0ec22
+1842	3936	7549141168688302	CMakeFiles/UpdateLTspiceCL.dir/model.cpp.obj	df39e4c0fd735a0d
+1849	3985	7549141168749272	CMakeFiles/UpdateLTspiceCL.dir/symbol.cpp.obj	baae165b8af66254
+3230	4399	7547526462412496	CMakeFiles/UpdateLTspiceCL.dir/Windows/utilities_windows.cpp.obj	5dc8530d084a2d3b
+2073	4443	7549141171000466	CMakeFiles/UpdateLTspiceCL.dir/utilities.cpp.obj	28e2c8350a05bf67
+4443	6060	7549141194694198	UpdateLTspiceCL.exe	c38434ea97b5de80

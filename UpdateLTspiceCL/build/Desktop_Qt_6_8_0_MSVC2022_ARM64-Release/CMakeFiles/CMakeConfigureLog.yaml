@@ -1,0 +1,285 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - ARM64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.42.34433/bin/HostARM64/ARM64/cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Microsoft (R) C/C++ Optimizing Compiler Version 19.42.34435 for ARM64
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      CMakeCXXCompilerId.cpp
+      Microsoft (R) Incremental Linker Version 14.42.34435.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+      
+      /out:CMakeCXXCompilerId.exe 
+      CMakeCXXCompilerId.obj 
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/3.29.3/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        main.c
+        Note: including file: C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-r7e8h8"
+      binary: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-r7e8h8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/platforms;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/platforms"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-r7e8h8'
+        
+        Run Build Command(s): C:/PROGRA~1/MICROS~1/2022/PROFES~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_94a9e
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\ARM64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\\cmTC_94a9e.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_94a9e.dir\\ /FS -c C:\\Qt\\Tools\\CMake\\share\\cmake-3.29\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_94a9e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_94a9e.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_94a9e.exe /implib:cmTC_94a9e.lib /pdb:cmTC_94a9e.pdb /version:0.0 /machine:ARM64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/PROGRA~1/MICROS~1/2022/PROFES~1/VC/Tools/MSVC/1442~1.344/bin/HOSTAR~1/arm64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/MICROS~1/2022/PROFES~1/VC/Tools/MSVC/1442~1.344/bin/HOSTAR~1/arm64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.42.34435.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Config.cmake:136 (include)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-2zyu1c"
+      binary: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-2zyu1c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/platforms;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-2zyu1c'
+        
+        Run Build Command(s): C:/PROGRA~1/MICROS~1/2022/PROFES~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_260ad
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\ARM64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_260ad.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_260ad.dir\\ /FS -c C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\CMakeScratch\\TryCompile-2zyu1c\\src.cxx
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_260ad.dir/src.cxx.obj 
+        C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\ARM64\\cl.exe  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_260ad.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_260ad.dir\\ /FS -c C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\CMakeScratch\\TryCompile-2zyu1c\\src.cxx
+        C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\CMakeScratch\\TryCompile-2zyu1c\\src.cxx(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Config.cmake:136 (include)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-kv3s58"
+      binary: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-kv3s58"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/platforms;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-kv3s58'
+        
+        Run Build Command(s): C:/PROGRA~1/MICROS~1/2022/PROFES~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_15964
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\ARM64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_15964.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_15964.dir\\ /FS -c C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\CMakeScratch\\TryCompile-kv3s58\\CheckFunctionExists.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_15964.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_15964.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_15964.exe /implib:cmTC_15964.lib /pdb:cmTC_15964.pdb /version:0.0 /machine:ARM64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_15964.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_15964.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_15964.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_15964.exe /implib:cmTC_15964.lib /pdb:cmTC_15964.pdb /version:0.0 /machine:ARM64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_15964.dir\\CheckFunctionExists.cxx.obj /out:cmTC_15964.exe /implib:cmTC_15964.lib /pdb:cmTC_15964.pdb /version:0.0 /machine:ARM64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_15964.dir/intermediate.manifest CMakeFiles\\cmTC_15964.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Config.cmake:136 (include)"
+      - "CMakeLists.txt:20 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-037jm1"
+      binary: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-037jm1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/platforms;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-037jm1'
+        
+        Run Build Command(s): C:/PROGRA~1/MICROS~1/2022/PROFES~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_07c4d
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\ARM64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_07c4d.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_07c4d.dir\\ /FS -c C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\CMakeScratch\\TryCompile-037jm1\\CheckFunctionExists.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_07c4d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_07c4d.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_07c4d.exe /implib:cmTC_07c4d.lib /pdb:cmTC_07c4d.pdb /version:0.0 /machine:ARM64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_07c4d.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_07c4d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_07c4d.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_07c4d.exe /implib:cmTC_07c4d.lib /pdb:cmTC_07c4d.pdb /version:0.0 /machine:ARM64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_07c4d.dir\\CheckFunctionExists.cxx.obj /out:cmTC_07c4d.exe /implib:cmTC_07c4d.lib /pdb:cmTC_07c4d.pdb /version:0.0 /machine:ARM64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_07c4d.dir/intermediate.manifest CMakeFiles\\cmTC_07c4d.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib'\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:45 (include)"
+      - "C:/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:143 (find_dependency)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:43 (_qt_internal_find_qt_dependencies)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
+      - "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/Qt6Config.cmake:181 (find_package)"
+      - "CMakeLists.txt:21 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-fcyz3g"
+      binary: "C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-fcyz3g"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:ARM64"
+      CMAKE_MODULE_PATH: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/platforms;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/kwin;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.0/msvc2022_arm64/lib/cmake/Qt6/3rdparty/kwin"
+      QT_ADDITIONAL_PACKAGES_PREFIX_PATH: ""
+      QT_CHAINLOAD_TOOLCHAIN_FILE: ""
+      QT_TOOLCHAIN_INCLUDE_FILE: ""
+      QT_TOOLCHAIN_RELOCATABLE_CMAKE_DIR: "C:/Qt/6.8.0/msvc2022_arm64/lib/cmake"
+      QT_TOOLCHAIN_RELOCATABLE_PREFIX: ""
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/build/Desktop_Qt_6_8_0_MSVC2022_ARM64-Release/CMakeFiles/CMakeScratch/TryCompile-fcyz3g'
+        
+        Run Build Command(s): C:/PROGRA~1/MICROS~1/2022/PROFES~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe -v cmTC_bfe40
+        [1/2] C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\ARM64\\cl.exe  /nologo /TP -DHAVE_STDATOMIC  /DWIN32 /D_WINDOWS /GR /EHsc  /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /showIncludes /FoCMakeFiles\\cmTC_bfe40.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_bfe40.dir\\ /FS -c C:\\Users\\german.ergueta\\LTspiceDevelopment\\SupportProjects\\Qt-Projects\\UpdateLTspiceCL\\build\\Desktop_Qt_6_8_0_MSVC2022_ARM64-Release\\CMakeFiles\\CMakeScratch\\TryCompile-fcyz3g\\src.cxx
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_bfe40.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\arm64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~1\\2022\\PROFES~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\HOSTAR~1\\arm64\\link.exe /nologo CMakeFiles\\cmTC_bfe40.dir\\src.cxx.obj  /out:cmTC_bfe40.exe /implib:cmTC_bfe40.lib /pdb:cmTC_bfe40.pdb /version:0.0 /machine:ARM64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+...

@@ -1,0 +1,7 @@
+username: KM\BLD_LTSPICE_USER
+password: "Wirkj83!"
+serverList:
+    - tamprdkmcmcsg1.km.analog.com
+    - 10.74.71.39
+signingProfileName: "ANALOG_GENERIC_SIGNING_KEY_2022_06_01"
+signingGroupName: "SEC_ADI_KM_PROD_GENERIC_Developer"

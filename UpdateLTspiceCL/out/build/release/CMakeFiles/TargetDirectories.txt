@@ -1,0 +1,8 @@
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/UpdateLTspiceCL.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/edit_cache.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/rebuild_cache.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/list_install_components.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/install.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/install/local.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/UpdateLTspiceCL_autogen_timestamp_deps.dir
+C:/Users/german.ergueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/release/CMakeFiles/UpdateLTspiceCL_autogen.dir

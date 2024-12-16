@@ -1,0 +1,187 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(UpdateLTspiceCL VERSION 0.1 LANGUAGES CXX)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Define architecture-specific Chilkat directories
+if(CMAKE_SIZEOF_VOID_P EQUAL 8) # 64-bit architecture
+    if(CMAKE_SYSTEM_PROCESSOR MATCHES "ARM|aarch64")
+        # Define the Qt installation directory
+        if(NOT DEFINED QT_INSTALL_DIR)
+            set(QT_INSTALL_DIR "C:/Qt/6.8.1/msvc2022_arm64") # Update with your Qt installation path
+        endif()
+    else()
+        if(NOT DEFINED QT_INSTALL_DIR)
+            set(QT_INSTALL_DIR "C:/Qt/6.8.1/msvc2022_64") # Update with your Qt installation path
+        endif()
+    endif()
+else() # 32-bit architecture
+    if(NOT DEFINED QT_INSTALL_DIR)
+        set(QT_INSTALL_DIR "C:/Qt/6.8.1/msvc2022_64") # Update with your Qt installation path
+    endif()
+endif()
+message("Qt install Directory: ${QT_INSTALL_DIR}")
+
+
+
+list(APPEND CMAKE_PREFIX_PATH "${QT_INSTALL_DIR}/lib/cmake")
+message("Using Qt installation at: ${QT_INSTALL_DIR}")
+
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Core Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Core Sql)
+
+if(WIN32)
+    set(HOME_DIR_WIN $ENV{USERPROFILE})
+    # Normalize path (replace backslashes with forward slashes)
+    string(REPLACE "\\" "/" HOME_DIR ${HOME_DIR_WIN})
+else()
+    set(HOME_DIR $ENV{HOME})
+endif()
+message("Home Directory: ${HOME_DIR}")
+
+# Define architecture-specific Chilkat directories
+if(WIN32)
+    if(CMAKE_SIZEOF_VOID_P EQUAL 8) # 64-bit architecture
+        if(CMAKE_SYSTEM_PROCESSOR MATCHES "ARM|aarch64")
+            set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_arm64)
+            set(CHILKAT_LIB ${CHILKAT_DIR}/libs/ChilkatRel_arm64.lib)
+        else()
+            set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_x86_64)
+            set(CHILKAT_LIB ${CHILKAT_DIR}/libs/ChilkatRel_x64.lib)
+        endif()
+    else() # 32-bit architecture
+        set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_x86)
+        set(CHILKAT_LIB ${CHILKAT_DIR}/libs/ChilkatRel_x86.lib)
+    endif()
+elseif(APPLE)
+    if(CMAKE_SYSTEM_PROCESSOR MATCHES "ARM|aarch64")
+        set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_arm64)
+        set(CHILKAT_LIB ${CHILKAT_DIR}/lib/libchilkat_arm64.a) # Use static library for macOS ARM64
+    else()
+        set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_x86_64)
+        set(CHILKAT_LIB ${CHILKAT_DIR}/lib/libchilkat_x86_64.a) # Use static library for macOS x86_64
+    endif()
+elseif(UNIX) # Generic Unix/Linux
+    if(CMAKE_SYSTEM_PROCESSOR MATCHES "ARM|aarch64")
+        set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_arm64)
+        set(CHILKAT_LIB ${CHILKAT_DIR}/lib/libchilkat_arm64.so) # Use shared library for Linux ARM64
+    else()
+        set(CHILKAT_DIR ${HOME_DIR}/LTspiceDevelopment/SupportProjects/Qt-Projects/chilkat_x86_64)
+        set(CHILKAT_LIB ${CHILKAT_DIR}/lib/libchilkat_x86_64.so) # Use shared library for Linux x86_64
+    endif()
+else()
+    message(FATAL_ERROR "Unsupported platform: ${CMAKE_SYSTEM_NAME}")
+endif()
+
+
+message("Chilkat Directory: ${CHILKAT_DIR}")
+message("Chilkat Library: ${CHILKAT_LIB}")
+
+# Include the Chilkat headers
+include_directories(${CHILKAT_DIR}/include)
+
+set(PROJECT_SOURCES
+        main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        mainwindow.ui
+)
+
+if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    qt_add_executable(UpdateLTspiceCL
+        MANUAL_FINALIZATION
+        ${PROJECT_SOURCES}
+        changes.h changes.cpp
+        dirpaths.h dirpaths.cpp
+        example.h example.cpp
+        model.h model.cpp
+        symbol.h symbol.cpp
+        Windows/utilities_windows.cpp Windows/utilities_windows.h
+        utilities.h utilities.cpp
+    )
+# Define target properties for Android with Qt 6 as:
+#    set_property(TARGET UpdateLTspiceCL APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
+# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
+else()
+    if(ANDROID)
+        add_library(UpdateLTspiceCL SHARED
+            ${PROJECT_SOURCES}
+        )
+# Define properties for Android with Qt 5 after find_package() calls as:
+#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+    else()
+        add_executable(UpdateLTspiceCL
+            ${PROJECT_SOURCES}
+        )
+    endif()
+endif()
+
+if(WIN32)
+    target_link_libraries(UpdateLTspiceCL
+        PRIVATE
+        Qt${QT_VERSION_MAJOR}::Widgets
+        Qt${QT_VERSION_MAJOR}::Core
+        Qt${QT_VERSION_MAJOR}::Sql
+        ${CHILKAT_LIB}
+        ws2_32
+        wldap32
+        crypt32
+        Advapi32)
+elseif(APPLE)
+    target_link_libraries(UpdateLTspiceCL
+        PRIVATE
+        Qt${QT_VERSION_MAJOR}::Widgets
+        Qt${QT_VERSION_MAJOR}::Core
+        Qt${QT_VERSION_MAJOR}::Sql)
+elseif(UNIX)
+    target_link_libraries(UpdateLTspiceCL
+        PRIVATE
+        Qt${QT_VERSION_MAJOR}::Widgets
+        Qt${QT_VERSION_MAJOR}::Core
+        Qt${QT_VERSION_MAJOR}::Sql)
+endif()
+
+# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
+# If you are developing for iOS or macOS you should consider setting an
+# explicit, fixed bundle identifier manually though.
+if(${QT_VERSION} VERSION_LESS 6.1.0)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.UpdateLTspiceCL)
+endif()
+
+set_target_properties(UpdateLTspiceCL PROPERTIES
+    ${BUNDLE_ID_OPTION}
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
+)
+
+include(GNUInstallDirs)
+install(TARGETS UpdateLTspiceCL
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(UpdateLTspiceCL)
+endif()
+
+if(WIN32)
+    # Define the path to windeployqt
+    set(WINDEPLOYQT_EXECUTABLE "${QT_INSTALL_DIR}/bin/windeployqt.exe")
+
+    # Add a custom command to use windeployqt after building the executable
+    add_custom_command(TARGET UpdateLTspiceCL POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E echo "Deploying with windeployqt..."
+            COMMAND "${WINDEPLOYQT_EXECUTABLE}" "$<TARGET_FILE:UpdateLTspiceCL>"
+            COMMENT "Running windeployqt to deploy Qt dependencies"
+    )
+endif()

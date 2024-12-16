@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-3854196ca4a0176a207c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UpdateLTspiceCL",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "UpdateLTspiceCL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UpdateLTspiceCL-Debug-e098ee27b6d73db707dc.json",
+					"name" : "UpdateLTspiceCL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UpdateLTspiceCL_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UpdateLTspiceCL_autogen-Debug-8c26576f7947e11cc5ac.json",
+					"name" : "UpdateLTspiceCL_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UpdateLTspiceCL_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UpdateLTspiceCL_autogen_timestamp_deps-Debug-2fc59f754ad9c80a6975.json",
+					"name" : "UpdateLTspiceCL_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/GErgueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL/out/build/debug",
+		"source" : "C:/Users/GErgueta/LTspiceDevelopment/SupportProjects/Qt-Projects/UpdateLTspiceCL"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
